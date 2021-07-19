@@ -1,0 +1,25 @@
+{
+  "name": "blog-challenge",
+  "version": "1.0.0",
+  "description": "Here I'll try to make my own blog website using ejs and node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elsa224/MyBlog.git"
+  },
+  "author": "Elsa T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elsa224/MyBlog/issues"
+  },
+  "homepage": "https://github.com/Elsa224/MyBlog#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "lodash": "^4.17.21"
+  }
+}
