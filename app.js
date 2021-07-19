@@ -73,10 +73,7 @@ app.post( "/compose", ( req, res ) => {
 
 } );
 
-
 //Spin up the server
 app.listen( API_PORT, function( )  {
     console.log( `Server started on port ${API_PORT}...` );
 } );
-
-
