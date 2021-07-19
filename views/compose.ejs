@@ -1,0 +1,19 @@
+<!-- Adding header.ejs and footer.ejs -->
+<%- include ( "partials/header" ); -%> 
+
+<h1>Compose</h1> <br /> <br />
+
+<!-- Added Bootstrap classes in order to be correct -->
+<form action="/compose" method="post"> 
+    <div class="form-group">
+        <label for="userInput" class="form-label">Title</label> <br />
+        <input type="text" name="postTitle" id="" autofocus class="form-control"> <br />
+
+        <label for="postContent" class="form-label">Post</label> <br />
+        <textarea name="postContent" id="" cols="50" rows="10" class="form-control"></textarea> <br /> <br />
+
+        <button type="submit" class="btn btn-info">Publish</button>
+    </div>
+</form>
+
+<%- include ( "partials/footer" ); -%> 
