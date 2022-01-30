@@ -1,13 +1,13 @@
 <!-- Adding header.ejs and footer.ejs -->
 <%- include ( "partials/header" ); -%> 
 
-<h1>Home</h1>
+<h1><%= homeTitle %> </h1>
 <p> <%= homeStartText %> </p> <br />
 
 <!-- Adding posts articles from the postArticles array using forEach method -->
 <% posts.forEach( post => { %>
     <h2> <%= post.title %>  </h2>
-    <p> <%=  post.content.substring(0, 100) + "..." %> <a href= "/posts/<%= post.title %>"  target="" rel="noopener noreferrer">Read More</a> </p> <br /> 
+    <p> <%=  post.content.substring(0, 100) + "..." %> <a href= "/posts/<%= post._id %>"  target="" rel="noopener noreferrer">Read More</a> </p> <br /> 
     <!-- Substring to truncate the text -->
 <% } ); %>
     
